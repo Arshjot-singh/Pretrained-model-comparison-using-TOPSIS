@@ -11,7 +11,7 @@ import pandas as pd
 import numpy as np
 
 # Load data from the CSV file
-data = pd.read_csv('/content/data (2).csv')
+data = pd.read_csv('/content/data.csv')
 
 #Extract relevant columns
 rouge_scores = data['Rouge_Scores'].values
