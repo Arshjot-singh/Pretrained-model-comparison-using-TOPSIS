@@ -13,7 +13,12 @@ Text summarization is a crucial natural language processing task that involves c
    - The Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) method is employed for the comparison. This method considers both the similarity to the ideal solution and the dissimilarity to the negative ideal solution, providing a comprehensive ranking.
 
 3. **Models Evaluated:**
-   - Real-world pretrained models, such as BERTSumExt, GPT-3, T5, XLNet, BART, and Pegasus, are included in the comparison. These models are widely used in text summarization tasks.
+   - Real-world pretrained models, such as RoBERTa,
+ELECTRA,
+DistilBERT,
+ALBERT,
+GPT-2,
+CTRL are included in the comparison. These models are widely used in text summarization tasks.
 
 ## Project Structure:
 
@@ -27,22 +32,22 @@ Text summarization is a crucial natural language processing task that involves c
 
 | **Model**   | **Rouge Scores**  | **Length of Summary** | **Training Time** |
 |-------------|-------------------|-----------------------|-------------------|
-| BERTSumExt  | 0.75              | 130                   | 9                 |
-| GPT-3       | 0.82              | 150                   | 12                |
-| T5          | 0.78              | 140                   | 10                |
-| XLNet       | 0.76              | 135                   | 11                |
-| BART        | 0.80              | 145                   | 8                 |
-| Pegasus     | 0.79              | 138                   | 13                |
+| RoBERTa     | 0.77              | 133                   | 10                |
+| ELECTRA     | 0.79              | 137                   | 11                |
+| DistilBERT  | 0.72              | 125                   | 7                 |
+| ALBERT      | 0.81              | 142                   | 13                |
+| GPT-2       | 0.76              | 132                   | 9                 |
+| CTRL        | 0.74              | 128                   | 8                 |
 
 
 
 ## Analysis:
 **Model Performance:**
-GPT-3 outperforms other models in terms of Rouge scores, securing the top rank.
-BERTSumExt and T5 follow closely, showcasing competitive performance.
+DistilBERT outperforms other models in terms of Rouge scores, securing the top rank.
+GPT-2 and CTRL follow closely, showcasing competitive performance.
 Efficiency Consideration:
-BERTSumExt is the most resource-efficient, with the lowest training time.
-BART and T5 offer a balanced trade-off between Rouge scores and efficiency.
+DistilBERT is the most resource-efficient, with the lowest training time.
+ELECTRA and ALBERT offer a balanced trade-off between Rouge scores and efficiency.
 Next Steps:
 Feel free to analyze the provided CSV files for more insights.
 Consider adjusting the evaluation metrics or adding new models based on your specific use case.
